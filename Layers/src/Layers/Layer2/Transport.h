@@ -1,12 +1,12 @@
 ///////////////////////////////////////////////////////////
 //  Transport.h
 //  Implementation of the Class Transport
-//  Created on:      19-Feb-2024 15:28:36
+//  Created on:      19-Feb-2024 15:44:51
 //  Original author: aleksej.brack
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_501ECC16_A20A_4482_A89B_15857C3605B2__INCLUDED_)
-#define EA_501ECC16_A20A_4482_A89B_15857C3605B2__INCLUDED_
+#if !defined(EA_1AB21D9E_F40D_4dd2_BD92_91CA47025E75__INCLUDED_)
+#define EA_1AB21D9E_F40D_4dd2_BD92_91CA47025E75__INCLUDED_
 
 #include <iostream>
 
@@ -18,8 +18,7 @@ class Transport : public L2Provider
 public:
 	Transport();
 	virtual ~Transport();
-
 	virtual void L2Service();
 
 };
-#endif // !defined(EA_501ECC16_A20A_4482_A89B_15857C3605B2__INCLUDED_)
+#endif // !defined(EA_1AB21D9E_F40D_4dd2_BD92_91CA47025E75__INCLUDED_)

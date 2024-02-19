@@ -1,11 +1,13 @@
 ///////////////////////////////////////////////////////////
 //  Session.cpp
 //  Implementation of the Class Session
-//  Created on:      19-Feb-2024 15:28:36
+//  Created on:      19-Feb-2024 15:44:51
 //  Original author: aleksej.brack
 ///////////////////////////////////////////////////////////
 
 #include "Session.h"
+
+
 
 
 Session::Session(){
@@ -13,13 +15,9 @@ Session::Session(){
 }
 
 
-
 Session::~Session(){
 
 }
-
-
-
 
 
 void Session::L3Service(){

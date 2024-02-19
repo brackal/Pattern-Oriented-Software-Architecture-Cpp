@@ -1,26 +1,24 @@
 ///////////////////////////////////////////////////////////
 //  L1Provider.h
 //  Implementation of the Interface L1Provider
-//  Created on:      19-Feb-2024 15:28:36
+//  Created on:      19-Feb-2024 15:44:51
 //  Original author: aleksej.brack
 ///////////////////////////////////////////////////////////
 
-#if !defined(EA_20E60790_A421_49d7_98B5_2B71BB7A2020__INCLUDED_)
-#define EA_20E60790_A421_49d7_98B5_2B71BB7A2020__INCLUDED_
+#if !defined(EA_2EBF70CA_886B_41ae_9BF0_C2E2FB113FD0__INCLUDED_)
+#define EA_2EBF70CA_886B_41ae_9BF0_C2E2FB113FD0__INCLUDED_
 
 class L1Provider
 {
 
 public:
-	L1Provider() {
+	L1Provider(){
 
 	}
-
-	virtual ~L1Provider() {
+	virtual ~L1Provider(){
 
 	}
-
 	virtual void L1Service() =0;
 
 };
-#endif // !defined(EA_20E60790_A421_49d7_98B5_2B71BB7A2020__INCLUDED_)
+#endif // !defined(EA_2EBF70CA_886B_41ae_9BF0_C2E2FB113FD0__INCLUDED_)
