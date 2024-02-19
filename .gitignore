@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+*.vs
+*Debug
+*.bak
+
+# EA Project
+*.eapx
+*.qea
+*.ldb
+
+# CMake
+build
