@@ -5,14 +5,20 @@ project(${PROJECT_NAME})
 
 add_executable(${PROJECT_NAME} 
     src/main.cpp
-    src/${PROJECT_NAME}/Model/Model.cpp
-    src/${PROJECT_NAME}/View/View.cpp
-    src/${PROJECT_NAME}/Controller/Controller.cpp
+    src/Client.cpp
+    src/Model/Model.cpp
+    src/View/View.cpp
+    src/View/ConcreteView/BarChartView.cpp
+    src/View/ConcreteView/TableView.cpp
+    src/Controller/Controller.cpp
+    src/Controller/ConcreteController/TableController.cpp
 )
 
 include_directories(
-    src/${PROJECT_NAME}
-    src/${PROJECT_NAME}/Model/
-    src/${PROJECT_NAME}/View/
-    src/${PROJECT_NAME}/Controller/
+    src/
+    src/Model/
+    src/View/
+    src/Controller/
+    src/View/ConcreteView/
+    src/Controller/ConcreteController/
 )
