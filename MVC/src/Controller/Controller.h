@@ -7,12 +7,12 @@
 #if !defined(CONTROLLER_H_)
 #define CONTROLLER_H_
 
-#include "I_Observer.h"
+#include "ICB_Observer.h"
 #include "Model.h"
 
 class View;  // Forward declaration of View class
 
-class Controller : public I_Observer {
+class Controller : public ICB_Observer {
    public:
     Controller();
     Controller(View* view);

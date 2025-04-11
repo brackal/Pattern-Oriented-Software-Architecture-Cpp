@@ -10,15 +10,15 @@
 #include <list>
 #include <string>
 
-#include "I_Observer.h"
+#include "ICB_Observer.h"
 
 class Model {
    public:
     Model();
     virtual ~Model();
 
-    void Register(I_Observer* observer);
-    void Unregister(I_Observer* observer);
+    void Register(ICB_Observer* observer);
+    void Unregister(ICB_Observer* observer);
 
     void AddVote(int vote, const std::string& party);
     void ClearVotes();
@@ -31,7 +31,7 @@ class Model {
     // Add any other methods you need for the model
 
    private:
-    std::list<I_Observer*> observerList;
+    std::list<ICB_Observer*> observerList;
     std::list<int> votesList;
     std::list<std::string> partiesList;
 

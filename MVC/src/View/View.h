@@ -8,10 +8,10 @@
 #define VIEW_H_
 
 #include "Controller.h"
-#include "I_Observer.h"
+#include "ICB_Observer.h"
 #include "Model.h"
 
-class View : public I_Observer {
+class View : public ICB_Observer {
    public:
     View();
     View(Model* model);

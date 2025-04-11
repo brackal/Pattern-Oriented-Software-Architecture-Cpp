@@ -12,11 +12,11 @@ Model::Model() {
 Model::~Model() {
 }
 
-void Model::Register(I_Observer* observer) {
+void Model::Register(ICB_Observer* observer) {
     observerList.push_back(observer);
 }
 
-void Model::Unregister(I_Observer* observer) {
+void Model::Unregister(ICB_Observer* observer) {
     observerList.remove(observer);
 }
 
