@@ -18,7 +18,7 @@ public:
 	virtual ~L1Provider(){
 
 	}
-	virtual void L1Service() =0;
+	virtual void L1Service() = 0;
 
 };
 #endif // !defined(EA_2EBF70CA_886B_41ae_9BF0_C2E2FB113FD0__INCLUDED_)
