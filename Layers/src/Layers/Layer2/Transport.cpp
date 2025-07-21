@@ -22,7 +22,9 @@ Transport::~Transport(){
 
 void Transport::L2Service(){
 
+	std::cout << std::endl;
 	std::cout << "L2Service starting its job!" << std::endl;
 	level1->L1Service();
 	std::cout << "L2Service finishing its job!" << std::endl;
+	std::cout << std::endl;
 }

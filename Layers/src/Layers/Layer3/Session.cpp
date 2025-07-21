@@ -22,7 +22,9 @@ Session::~Session(){
 
 void Session::L3Service(){
 
+	std::cout << std::endl;
 	std::cout << "L3Service starting its job!" << std::endl;
 	level2->L2Service();
 	std::cout << "L3Service finishing its job!" << std::endl;
+	std::cout << std::endl;
 }
