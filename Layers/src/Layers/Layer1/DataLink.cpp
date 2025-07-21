@@ -25,6 +25,6 @@ void DataLink::L1Service(){
 	std::cout << std::endl;
 	std::cout << "L1Service starting its job!" << std::endl;
 	std::cout << "L1Service doing its job!" << std::endl;
-	std::cout << "L1Service starting its job!" << std::endl;
+	std::cout << "L1Service finishing its job!" << std::endl;
 	std::cout << std::endl;
 }
