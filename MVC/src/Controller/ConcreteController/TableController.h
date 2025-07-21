@@ -17,7 +17,7 @@ class TableController : public Controller {
     TableController(View* view);
     virtual ~TableController();
 
-    virtual void Update();
-    virtual void HandleEvent(int event);
+    virtual void Update() override;
+    virtual void HandleEvent(int event) override;
 };
 #endif  // !defined(TABLECONTROLLER_H_)

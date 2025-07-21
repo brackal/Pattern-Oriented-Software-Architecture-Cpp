@@ -6,15 +6,15 @@
 
 #include "TableController.h"
 
-#include "View.h"  // Include the full definition of the View class
+#include "View.h"
 
 TableController::TableController() : Controller() {
     // Default constructor
 }
 
 TableController::TableController(View* view) : Controller(view) {
-    this->model = view->GetModel();  // Get the model from the view
-    this->model->Register(this);
+    this->model = view->GetModel();
+    // this->model->Register(this);
 }
 
 TableController::~TableController() {

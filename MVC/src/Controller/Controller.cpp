@@ -13,8 +13,10 @@ Controller::Controller() : model(nullptr), view(nullptr) {
 }
 
 Controller::Controller(View* view) : view(view), model(nullptr) {
-    this->model = view->GetModel();
-    this->model->Register(this);
+    this->model = view->GetModel();  // Get the model from the view
+
+    // controller can register itself as an observer of the model if needed
+    // this->model->Register(this);
 }
 
 Controller::~Controller() {
