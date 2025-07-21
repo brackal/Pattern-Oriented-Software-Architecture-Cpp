@@ -4,3 +4,12 @@ To build an executable file, run the relevant script: StartCMakeOnWindows.bat on
 
 ## Application description
 todo
+
+
+## Class view
+
+![LayersPattern_ClassDiagramm](uml/LayersPattern_ClassDiagramm.png "LayersPattern_ClassDiagramm")
+
+## Package view
+
+![LayersPattern_PackageDiagramm](uml/LayersPattern_PackageDiagramm.png "LayersPattern_PackageDiagramm")
