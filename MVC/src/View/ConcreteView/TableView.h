@@ -18,6 +18,7 @@ class TableView : public View {
     TableView(Model* model);
     virtual ~TableView();
 
+   private:
     void Draw() override;  // Override the Draw method from the View class
 };
 #endif  // !defined(TABLEVIEW_H_)

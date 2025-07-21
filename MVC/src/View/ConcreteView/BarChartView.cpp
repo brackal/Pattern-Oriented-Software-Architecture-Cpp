@@ -8,10 +8,14 @@
 
 BarChartView::BarChartView() : View() {
     // Default constructor
+    controller = nullptr;  // No controller for this view
+    model = nullptr;       // No model for this view
 }
 
 BarChartView::BarChartView(Model* model) : View(model) {
     // Constructor with model parameter
+    // This view does not create its own controller
+    controller = nullptr;
 }
 
 BarChartView::~BarChartView() {
@@ -20,22 +24,18 @@ BarChartView::~BarChartView() {
 
 void BarChartView::Draw() {
     // Implement the drawing logic for the bar chart view
-    std::cout << "Drawing Bar Chart View" << std::endl;
+    std::cout << "BAR CHART View displays:" << std::endl;
 
     if (model != nullptr) {
         // Example of accessing model data
-        const auto votesBegin = model->GetBeginVotes();
-        const auto votesEnd = model->GetEndVotes();
-        const auto partiesBegin = model->GetBeginParties();
+        auto partiesPairsIt = model->GetBeginParties();
+        const auto partiesPairsEnd = model->GetEndParties();
 
-        auto voteIt = votesBegin;
-        auto partyIt = partiesBegin;
-
-        while (voteIt != votesEnd) {
-            std::cout << *partyIt << ": " << *voteIt << std::endl;
-            ++voteIt;
-            ++partyIt;
+        while (partiesPairsIt != partiesPairsEnd) {
+            std::cout << partiesPairsIt->second << ": " << partiesPairsIt->first << std::endl;
+            ++partiesPairsIt;
         }
+
         std::cout << std::endl;
     } else {
         std::cout << "Model is not set." << std::endl;

@@ -19,7 +19,6 @@ class View : public ICB_Observer {
     virtual void Update();
 
     virtual void Draw() = 0;  // Pure virtual function to be implemented by derived classes
-    // void SetController(Controller* controller);
     Model* GetModel();
     Controller* GetController();
 

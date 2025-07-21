@@ -23,17 +23,14 @@ class Model {
     void AddVote(int vote, const std::string& party);
     void ClearVotes();
 
-    std::list<int>::iterator GetBeginVotes();
-    std::list<std::string>::iterator GetBeginParties();
-    std::list<int>::iterator GetEndVotes();
-    std::list<std::string>::iterator GetEndParties();
+    std::list<std::pair<int, std::string>>::iterator Model::GetBeginParties();
+    std::list<std::pair<int, std::string>>::iterator Model::GetEndParties();
 
     // Add any other methods you need for the model
 
    private:
     std::list<ICB_Observer*> observerList;
-    std::list<int> votesList;
-    std::list<std::string> partiesList;
+    std::list<std::pair<int, std::string>> partiesListPairs;
 
     void Notify();
 };

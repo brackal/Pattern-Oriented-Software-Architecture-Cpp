@@ -23,10 +23,6 @@ void View::Update() {
     // This method is called when the model notifies the observer (view) of changes
 }
 
-// void View::SetController(Controller* controller) {
-//     this->controller = controller;  // Set the controller instance
-// }
-
 Model* View::GetModel() {
     return model;  // Return the model instance
 }

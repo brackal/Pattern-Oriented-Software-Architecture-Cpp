@@ -17,6 +17,7 @@ class BarChartView : public View {
     BarChartView(Model* model);
     virtual ~BarChartView();
 
+   private:
     void Draw() override;  // Override the Draw method from the View class
 };
 #endif  // !defined(BARCHARTVIEW_H_)

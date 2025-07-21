@@ -8,10 +8,13 @@
 
 TableView::TableView() : View() {
     // Default constructor
+    controller = nullptr;
+    model = nullptr;
 }
 
 TableView::TableView(Model* model) : View(model) {
     // Constructor with model parameter
+    // Concrete view creates its own controller
     controller = new TableController(this);  // Create a new controller instance
 }
 
@@ -21,21 +24,18 @@ TableView::~TableView() {
 
 void TableView::Draw() {
     // Implement the drawing logic for the table view
-    std::cout << "Drawing Table View" << std::endl;
+    std::cout << "TABLE VIEW displays:" << std::endl;
 
     if (model != nullptr) {
         // Example of accessing model data
-        const auto votes = model->GetBeginVotes();
-        const auto parties = model->GetBeginParties();
+        auto partiesPairsIt = model->GetBeginParties();
+        const auto partiesPairsEnd = model->GetEndParties();
 
-        auto voteIt = votes;
-        auto partyIt = parties;
-
-        while (voteIt != model->GetEndVotes() && partyIt != model->GetEndParties()) {
-            std::cout << *partyIt << ": " << *voteIt << std::endl;
-            ++voteIt;
-            ++partyIt;
+        while (partiesPairsIt != partiesPairsEnd) {
+            std::cout << partiesPairsIt->second << ": " << partiesPairsIt->first << std::endl;
+            ++partiesPairsIt;
         }
+
         std::cout << std::endl;
     } else {
         std::cout << "Model is not set." << std::endl;
